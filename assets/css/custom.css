@@ -3597,16 +3597,19 @@ FAQ PAGE CSS ENDS
     background-color: var(---hero-bg);
     padding: clamp(24px, 3vw, 32px);
 }
-.login_form_container .form_heading h2{
+
+.login_form_container .form_heading h2 {
     font-size: clamp(22px, 2vw, 28px);
     font-weight: 700;
     margin-bottom: 10px;
 }
-.login_form_container p{
+
+.login_form_container p {
     color: var(--grey-color2);
     margin-bottom: 16px;
 }
-.login_form_container .form_heading .social_methods > a{
+
+.login_form_container .form_heading .social_methods>a {
     padding: 10px 24px;
     display: flex;
     align-items: center;
@@ -3615,20 +3618,49 @@ FAQ PAGE CSS ENDS
     color: var(--white-color);
     border-radius: 4px;
 }
-.facebook{
+
+.facebook {
     background-color: #3B5998;
 }
-.twitter{
+
+.twitter {
     background-color: #139AF0;
 }
-.google{
+
+.google {
     background-color: #F61818;
 }
-.login_form_container .form_heading .social_methods{
+
+.login_form_container .form_heading .social_methods {
     padding-bottom: 24px;
     border-bottom: 1px solid var(--grey-color);
     margin-bottom: 24px;
 }
+.login_form_container form input{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid var(--grey-color);
+    outline: none;
+}
+.login_form_container form label{
+    color: var(--dark-grey);
+}
+.login_form_container form button{
+    background-color: var(--black-font);
+    color: var(--white-color);
+    width: 100%;
+    border: none;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+}
+.login_form_container form button:hover{
+    background-color: var(--primary-color);
+}
+.login_form_container form .signup a{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* ################### LOGIN PAGE CSS ENDS ############### */
 
 /* ++++++++++++

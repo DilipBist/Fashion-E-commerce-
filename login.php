@@ -22,7 +22,7 @@ include 'inc/header.php';
         <div class="row g-0 justify-content-center">
             <div class="col-lg-10">
                 <div class="row g-0">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-none d-lg-block">
                         <div class="login_left_img">
                             <img src="assets/images/backgrounds/loginimg.png" alt="">
                         </div>
@@ -82,7 +82,7 @@ include 'inc/header.php';
                                     </div>
 
                                     <div class="col-12">
-                                        <div class="d-flex align-items-center gap-1">
+                                        <div class="d-flex align-items-center gap-1 signup">
                                             <p class="m-0">Dont't have and account?</p>
                                             <a href="#">Sign up</a>
                                         </div>
