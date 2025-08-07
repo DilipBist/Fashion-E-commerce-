@@ -4108,6 +4108,45 @@ BLOG PAGE CSS STARTS
 .comment_form form label{
     color: var(--dark-grey);
 }
+.contact_sec_contact_detail_container{
+    background-color: var(--white-F7);
+    padding: clamp(24px, 2.5vw, 32px);
+    color: var(--black-font);
+    font-weight: 600;
+}
+.contact_sec_contact_detail_container a i{
+    color: var(--primary-color);
+    font-size: 24px;
+}
+.contact_sec_contact_detail_container a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact_left_div h2{
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+.live_chat_btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 24px;
+    border: 1px solid var(--grey-color);
+}
+.live_chat_btn a i{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.contact_Section .comment_form h3{
+    font-size: clamp(24px, 3vw, 32px);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
 /* =========================================
 BLOG PAGE CSS ENDS 
 ========================================= */

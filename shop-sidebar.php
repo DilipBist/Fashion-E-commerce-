@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Shop';
-include 'inc/header.php'; 
+include 'inc/header.php';
 ?>
 
 <!-- breadcrumb section starts  -->
@@ -23,7 +23,7 @@ include 'inc/header.php';
         <div class="row g-4">
             <div class="col-lg-4 col-xxl-3">
                 <div class="shop_side_bar_left d-flex flex-wrap flex-lg-column gap-4">
-                    <div class="common_sliderbar_border">
+                    <div class="common_sliderbar_border d-none d-md-block">
                         <h3>Category</h3>
 
                         <div class="radio_btns_container">
@@ -73,7 +73,7 @@ include 'inc/header.php';
                         </div>
 
                     </div>
-                    <div class="common_sliderbar_border">
+                    <div class="common_sliderbar_border d-none d-md-block">
                         <h3>Color</h3>
 
                         <div class="color_filter mt-2">
@@ -115,7 +115,7 @@ include 'inc/header.php';
                         </div>
                     </div>
 
-                    <div class="common_sliderbar_border">
+                    <div class="common_sliderbar_border d-none d-lg-block">
                         <h3>Brands</h3>
 
                         <div class="radio_btns_container">
@@ -150,7 +150,7 @@ include 'inc/header.php';
                         </div>
                     </div>
 
-                    <div class="common_sliderbar_border">
+                    <div class="common_sliderbar_border d-none d-lg-block">
                         <h3>Recent Products</h3>
 
                         <div class="recent_product mt-4 d-flex flex-column gap-3">
