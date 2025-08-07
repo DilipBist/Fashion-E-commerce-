@@ -1,43 +1,40 @@
 /* montserrat font  */
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat.ttf') format('truetype-variations');
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat.ttf") format("truetype-variations");
     font-weight: 100 900;
 }
 
 /* open sans font  */
 @font-face {
-    font-family: 'OpenSans';
-    src: url('../fonts/OpenSans.ttf') format('truetype-variations');
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans.ttf") format("truetype-variations");
     font-weight: 100 900;
 }
 
-
 :root {
     /* colors  */
-    --primary-color: #FF3636;
-    --yellow: #FFA818;
-    --top-header: #2A2A2A;
-    ---hero-bg: #F6F6F6;
-    --white-F7: #F7F7F7;
-    --black-font: #0C0C0C;
+    --primary-color: #ff3636;
+    --yellow: #ffa818;
+    --top-header: #2a2a2a;
+    ---hero-bg: #f6f6f6;
+    --white-F7: #f7f7f7;
+    --black-font: #0c0c0c;
     --grey-color: #d5d5d5;
-    --grey-color2: #7A7A7A;
+    --grey-color2: #7a7a7a;
     --dark-grey: #565656;
-    --white-color: #FFFFFF;
+    --white-color: #ffffff;
     --off-white: #fcfcfc;
     --footer-bg: #212121;
-    --footer-text: #7C7C7C;
-    --footer-text1: #B1B1B1;
+    --footer-text: #7c7c7c;
+    --footer-text1: #b1b1b1;
     --footer-social-icon: #383838;
     --product-overlay: rgba(255, 223, 223, 0.5);
     --border-bootstrap: #dee2e6;
 
-
     /* font familys  */
-    --font-family-OpenSans: 'OpenSans', sans-serif;
-    --font-family-Montserrat: 'Montserrat', sans-serif;
-
+    --font-family-OpenSans: "OpenSans", sans-serif;
+    --font-family-Montserrat: "Montserrat", sans-serif;
 }
 
 * {
@@ -99,7 +96,7 @@ img {
     border-radius: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     display: inline-block;
 }
 
@@ -117,7 +114,7 @@ img {
     border: 2px solid var(--black-font);
     border-radius: 5px;
     margin-top: 10px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     font-weight: 600;
 }
 
@@ -136,7 +133,7 @@ img {
     border: 2px solid var(--black-font);
     background-color: var(--black-font);
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     font-weight: 600;
 }
 
@@ -145,8 +142,6 @@ img {
     background-color: transparent;
     border-color: var(--black-font);
 }
-
-
 
 .common_heading h3 {
     font-size: clamp(26px, 2.2vw, 36px);
@@ -161,12 +156,6 @@ img {
 .p64 {
     padding: 64px 0;
 }
-
-
-
-
-
-
 
 /* scroll top top design  */
 .scroll_top {
@@ -198,14 +187,15 @@ img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    background: var(--bg, conic-gradient(var(--primary-color) 0%, var(--white-color) 0%));
+    background: var(--bg,
+            conic-gradient(var(--primary-color) 0%, var(--white-color) 0%));
     z-index: -1;
     top: 0;
     left: 0;
 }
 
 .scroll_top::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -216,7 +206,6 @@ img {
     background-color: var(--white-color);
     z-index: -1;
 }
-
 
 /* ========== 
 HEADER CSS STARTS 
@@ -327,7 +316,7 @@ header .top_header {
 
 .wish_list p,
 .cart {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .wish_list p:hover,
@@ -418,7 +407,7 @@ header .top_header {
 .navbar-nav .nav-item .nav-link {
     color: var(--black-font);
     font-weight: 600;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -576,7 +565,6 @@ header .top_header {
 HEADER CSS ENDZ 
 =========== */
 
-
 /* -------
 HERO SLIDER SECTION STARTS
 --------- */
@@ -618,14 +606,13 @@ HERO SLIDER SECTION STARTS
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .slider-img::before {
     height: 100%;
     width: 100%;
     border: 3px solid var(--primary-color);
-    content: '';
+    content: "";
     position: absolute;
     top: -30px;
     left: -20px;
@@ -667,7 +654,7 @@ HERO SLIDER SECTION STARTS
 
 .heroSlider .swiper-button-prev,
 .heroSlider .swiper-button-next {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     height: 65px;
     width: 40px;
     color: var(--primary-color);
@@ -725,7 +712,7 @@ HERO SLIDER SECTION ENDS
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .large_banner_one:hover img {
@@ -779,7 +766,6 @@ HERO SLIDER SECTION ENDS
 
 /* ========= HOME PRODUT BANNER ONE CSS ENDS ========== */
 
-
 /* ******** 
 PRODUCT SHOW CASE SECTION CSS STARTS 
 ******** */
@@ -799,7 +785,7 @@ PRODUCT SHOW CASE SECTION CSS STARTS
     left: 0;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .product_img:hover .product_bg_overlay {
@@ -922,7 +908,7 @@ PRODUCT SHOW CASE SECTION CSS STARTS
     background-color: var(--white-color);
     border-radius: 50%;
     font-size: 20px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .product-more-info:hover {
@@ -969,7 +955,7 @@ PRODUCT SHOW CASE SECTION CSS STARTS
     border-left: 0;
     border-top: 0;
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .indi_produt_details_filter_container .indi_product_des_filter_btns button.active {
@@ -999,7 +985,7 @@ PRODUCT SHOW CASE SECTION CSS STARTS
     height: 0;
     overflow: hidden;
     transform: translateY(-20px);
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .product_filter_content .filter-content.active {
@@ -1025,13 +1011,13 @@ SALE BANNER SECTION CSS STARTS
 }
 
 .sale_banner_section::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('../images/backgrounds/brushpattern.png');
+    background: url("../images/backgrounds/brushpattern.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.5;
@@ -1101,7 +1087,7 @@ SALE BANNER SECTION CSS STARTS
     border-radius: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .sale_discount_offer a:hover {
@@ -1140,7 +1126,7 @@ POPULAR PRODUCTS SECTION CSS STARTS
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .popular_product_banner_image:hover img {
@@ -1190,7 +1176,7 @@ POPULAR PRODUCTS SECTION CSS STARTS
     border: 1px solid var(--black-font);
     border-radius: 5px;
     margin-top: 10px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .popular_banner_content a:hover {
@@ -1202,9 +1188,6 @@ POPULAR PRODUCTS SECTION CSS STARTS
 /* ++++++++++
 POPULAR PRODUCTS SECTION CSS ENDS
 ++++++++++ */
-
-
-
 
 /* 000000000
 COUNT DOWN SECTION CSS STARTS
@@ -1291,8 +1274,6 @@ COUNT DOWN SECTION CSS STARTS
 COUNT DOWN SECTION CSS ENDS
 000000000 */
 
-
-
 /* ======== 
 PRODUCT COLLECTION SECTION CSS STARTS
 ======== 
@@ -1351,7 +1332,7 @@ PRODUCT COLLECTION SECTION CSS STARTS
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .card_two_details h5 {
@@ -1416,7 +1397,6 @@ PRODUCT COLLECTION SECTION CSS ENDS
 ======== 
  */
 
-
 /* insta slider section css starts  */
 .shop_insta_img {
     height: 360px;
@@ -1433,7 +1413,7 @@ PRODUCT COLLECTION SECTION CSS ENDS
     width: 100%;
     opacity: 0;
     visibility: hidden;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .insta_overlay a {
@@ -1450,7 +1430,7 @@ PRODUCT COLLECTION SECTION CSS ENDS
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .insta_overlay a:hover {
@@ -1484,7 +1464,6 @@ PRODUCT COLLECTION SECTION CSS ENDS
 
 /* insta slider section css ends */
 
-
 /* delivery option section starts  */
 .delivery_data img {
     width: 52px;
@@ -1513,7 +1492,6 @@ PRODUCT COLLECTION SECTION CSS ENDS
 
 /* delivery option section ends */
 
-
 /* ==========
  POPULAR JOURNAL SECTION CSS STARTS 
 ========== */
@@ -1530,7 +1508,7 @@ PRODUCT COLLECTION SECTION CSS ENDS
 }
 
 .journal_fist .journal_overlay {
-    background: linear-gradient(rgba(12, 12, 12, 0.0), rgba(12, 12, 12, 0.9));
+    background: linear-gradient(rgba(12, 12, 12, 0), rgba(12, 12, 12, 0.9));
     position: absolute;
     top: 0;
     left: 0;
@@ -1615,7 +1593,6 @@ PRODUCT COLLECTION SECTION CSS ENDS
  POPULAR JOURNAL SECTION CSS ENDS 
 ========== */
 
-
 /* ==== BRAND LOGO SECTION CSS STARTS ==== */
 .brandLogo {
     padding: 16px 0;
@@ -1636,7 +1613,6 @@ PRODUCT COLLECTION SECTION CSS ENDS
 }
 
 /* ==== BRAND LOGO SECTION CSS ENDS ==== */
-
 
 /* ============
 FOOTER SECTION CSS STARTS 
@@ -1693,10 +1669,8 @@ footer {
     gap: 6px;
 }
 
-
-
 footer ul li a {
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 footer ul li a:hover {
@@ -1740,7 +1714,7 @@ footer ul li a:hover {
     justify-content: center;
     background-color: var(--footer-social-icon);
     border-radius: 50%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .footer_social_links ul li:hover {
@@ -1800,10 +1774,6 @@ footer ul li a:hover {
 /* ============
 FOOTER SECTION CSS ENDS 
 ============ */
-
-
-
-
 
 /* *********************************
 PRODUCT DETAILS PAGE CSS STARTS 
@@ -2049,7 +2019,7 @@ PRODUCT DETAILS PAGE CSS STARTS
     justify-content: center;
     background-color: var(--primary-color);
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     border-radius: 3px;
 }
 
@@ -2099,7 +2069,7 @@ PRODUCT DETAILS PAGE CSS STARTS
 }
 
 .product_social_links .facebook {
-    background-color: #3B5998;
+    background-color: #3b5998;
     color: var(--white-color);
     display: flex;
     align-items: center;
@@ -2108,7 +2078,7 @@ PRODUCT DETAILS PAGE CSS STARTS
 }
 
 .product_social_links .twitter {
-    background-color: #139AF0;
+    background-color: #139af0;
     color: var(--white-color);
     justify-content: center;
     display: flex;
@@ -2117,7 +2087,7 @@ PRODUCT DETAILS PAGE CSS STARTS
 }
 
 .product_social_links .youtube {
-    background-color: #F61818;
+    background-color: #f61818;
     color: var(--white-color);
     justify-content: center;
     display: flex;
@@ -2126,7 +2096,7 @@ PRODUCT DETAILS PAGE CSS STARTS
 }
 
 .product_social_links .instagram {
-    background-color: #E70C88;
+    background-color: #e70c88;
     color: var(--white-color);
     display: flex;
     align-items: center;
@@ -2187,7 +2157,6 @@ PRODUCT DETAILS PAGE CSS STARTS
 /* *********************************
 PRODUCT DETAILS PAGE CSS ENDS
 ********************************* */
-
 
 /* ===============
 ABOUT US PAGE CSS STARTS 
@@ -2324,14 +2293,14 @@ ABOUT US PAGE CSS STARTS
 }
 
 .steps_div_container::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 20%;
     right: -50px;
     transform: translateY(-50%);
     height: 100px;
     width: 100px;
-    background: url('../images/icons/redo-arrow.png');
+    background: url("../images/icons/redo-arrow.png");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -2515,7 +2484,7 @@ ABOUT US PAGE CSS STARTS
 }
 
 .video_paly_bg {
-    background: url('../images/backgrounds/aboutvideobanner.jpg');
+    background: url("../images/backgrounds/aboutvideobanner.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -2528,7 +2497,7 @@ ABOUT US PAGE CSS STARTS
 .video_paly_bg::after {
     height: 100%;
     width: 100%;
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -2545,7 +2514,6 @@ ABOUT US PAGE CSS STARTS
     color: var(--white-color);
     z-index: 1;
     text-transform: uppercase;
-
 }
 
 .video_paly_bg .content h3 {
@@ -2634,7 +2602,7 @@ ABOUT US PAGE CSS STARTS
 .team_leader_container .leader_img img {
     height: 100%;
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     object-fit: cover;
 }
 
@@ -2648,7 +2616,7 @@ ABOUT US PAGE CSS STARTS
     left: 50%;
     transform: translateX(-50%);
     width: 96%;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .leader_img:hover .leader_social_links {
@@ -2676,7 +2644,7 @@ ABOUT US PAGE CSS STARTS
     justify-content: center;
     color: var(--dark-grey);
     font-size: 18px;
-    transition: a .5s ease-in-out;
+    transition: a 0.5s ease-in-out;
 }
 
 .leader_social_links ul li a:hover {
@@ -2687,8 +2655,6 @@ ABOUT US PAGE CSS STARTS
 /* ===============
 ABOUT US PAGE CSS ENDS
 =============== */
-
-
 
 /* **********************
 CART PAGE CSS STARTS 
@@ -2962,7 +2928,6 @@ CART PAGE CSS STARTS
 CART PAGE CSS ENDS 
 ********************** */
 
-
 /* +++++++++++++++++++++
 CHECKOUT PAGE CSS STARTS  
 +++++++++++++++++++++ */
@@ -3069,7 +3034,7 @@ CHECKOUT PAGE CSS STARTS
 }
 
 .bank_policy_accordion .accordion-button::after {
-    content: '+';
+    content: "+";
     background-image: none !important;
     font-size: 16px;
     height: 18px;
@@ -3090,9 +3055,8 @@ CHECKOUT PAGE CSS STARTS
     align-items: center;
 }
 
-
 .bank_policy_accordion .accordion-button:not(.collapsed)::after {
-    content: '-';
+    content: "-";
 }
 
 .bank_policy_accordion .accordion-item {
@@ -3129,9 +3093,6 @@ CHECKOUT PAGE CSS STARTS
 CHECKOUT PAGE CSS STARTS ENDS 
 +++++++++++++++++++++ */
 
-
-
-
 /* ****************
 SHOPPING GRID PAGE CSS STARTS 
 **************** */
@@ -3144,7 +3105,7 @@ SHOPPING GRID PAGE CSS STARTS
     width: 40px;
     font-size: 24px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3201,7 +3162,7 @@ SHOPPING GRID PAGE CSS STARTS
     justify-content: center;
     font-weight: 600;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .pagination_btns_container .prev_btn:hover,
@@ -3228,7 +3189,7 @@ SHOPPING GRID PAGE CSS STARTS
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -3247,7 +3208,7 @@ SHOPPING GRID PAGE CSS STARTS
 }
 
 .common_sliderbar_border h3::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 14px;
     left: 0;
@@ -3258,7 +3219,7 @@ SHOPPING GRID PAGE CSS STARTS
 }
 
 .common_sliderbar_border h3::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     left: 8px;
@@ -3415,7 +3376,7 @@ SHOPPING GRID PAGE CSS STARTS
     justify-content: center;
     padding: 0 24px;
     border: 1px solid var(--primary-color);
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .filter_slide button:hover {
@@ -3426,7 +3387,6 @@ SHOPPING GRID PAGE CSS STARTS
 /* ****************
 SHOPPING GRID PAGE CSS ENDS 
 **************** */
-
 
 /* ++++++++++++++++++++++
 FAQ PAGE CSS STARTS 
@@ -3511,7 +3471,7 @@ FAQ PAGE CSS STARTS
 }
 
 .faq_accordion_right .bank_policy_accordion .accordion-button:not(.collapsed)::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     width: 96%;
@@ -3549,13 +3509,10 @@ FAQ PAGE CSS STARTS
     border-bottom: none !important;
 }
 
-
 .faq_left_accordion .accordion .accordion-body {
     color: var(--grey-color);
     padding: 16px 0 10px 0;
 }
-
-
 
 .faq_left_accordion .accordion .accordion-body ul {
     display: flex;
@@ -3578,9 +3535,9 @@ FAQ PAGE CSS STARTS
 }
 
 .faq_left_accordion .accordion-button::after {
-    content: '\ea4e';
+    content: "\ea4e";
     background-image: none !important;
-    font-family: 'remixicon';
+    font-family: "remixicon";
 }
 
 .faq_left_accordion .accordion-button:not(.collapsed)::after {
@@ -3590,7 +3547,6 @@ FAQ PAGE CSS STARTS
 /* ++++++++++++++++++++++
 FAQ PAGE CSS ENDS 
 ++++++++++++++++++++++ */
-
 
 /* ################### LOGIN PAGE CSS STARTS ############### */
 .login_form_container {
@@ -3620,15 +3576,15 @@ FAQ PAGE CSS ENDS
 }
 
 .facebook {
-    background-color: #3B5998;
+    background-color: #3b5998;
 }
 
 .twitter {
-    background-color: #139AF0;
+    background-color: #139af0;
 }
 
 .google {
-    background-color: #F61818;
+    background-color: #f61818;
 }
 
 .login_form_container .form_heading .social_methods {
@@ -3636,40 +3592,254 @@ FAQ PAGE CSS ENDS
     border-bottom: 1px solid var(--grey-color);
     margin-bottom: 24px;
 }
-.login_form_container form input{
+
+.login_form_container form input {
     padding: 10px;
     background-color: transparent;
     border: 1px solid var(--grey-color);
     outline: none;
 }
-.login_form_container form label{
+
+.login_form_container form label {
     color: var(--dark-grey);
 }
-.login_form_container form button{
+
+.login_form_container form button {
     background-color: var(--black-font);
     color: var(--white-color);
     width: 100%;
     border: none;
     padding: 10px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
-.login_form_container form button:hover{
+
+.login_form_container form button:hover {
     background-color: var(--primary-color);
 }
-.login_form_container form .signup a{
+
+.login_form_container form .signup a {
     color: var(--primary-color);
     font-weight: 600;
 }
 
 /* ################### LOGIN PAGE CSS ENDS ############### */
 
+/* =========================================
+BLOG PAGE CSS STARTS 
+========================================= */
+.blog_info_container .blog_img {
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog_info_container .blog_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgb(255, 54, 54, 0.1) 0%,
+            rgba(255, 54, 54, 0.4) 50%,
+            rgba(255, 54, 54, 0.1) 100%);
+    transform: skewX(-25deg);
+    transition: left 0.8s ease-in-out;
+    pointer-events: none;
+}
+
+.blog_info_container:hover .blog_img::after {
+    left: 120%;
+}
+
+.blog_info_container .blog_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog_description {
+    padding: clamp(32px, 3vw, 42px) 16px 5px 16px;
+    position: relative;
+}
+
+.blog_description:hover .blog_tag_container {
+    transform: translateY(-10px) translateX(-50%);
+}
+
+.blog_tag_container {
+    position: absolute;
+    top: -20px;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 10px 0px rgba(12, 12, 12, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    padding: 10px 20px;
+    font-size: clamp(14px, 1vw, 16px);
+    transition: all 0.5s ease-in-out;
+}
+
+.blog_tag_container .blog_cat {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.blog_tag_container>div {
+    position: relative;
+    padding-right: 7px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--black-font);
+}
+
+.blog_tag_container>div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 70%;
+    width: 1px;
+    background-color: var(--dark-grey);
+}
+
+.blog_tag_container>div:last-child::before {
+    display: none;
+}
+
+.blog_description h3 {
+    font-size: clamp(20px, 2vw, 22px);
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog_description p {
+    color: var(--dark-grey);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.blog_description a {
+    font-size: clamp(16px, 1.2vw, 18px);
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_description a:hover {
+    color: var(--primary-color);
+}
+
+.blog_right_div .radio_btns_container>div a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    color: var(--dark-grey);
+}
+
+.blog_right_div .radio_btns_container>div a:hover {
+    color: var(--primary-color);
+}
+
+.blog_right_div .radio_btns_container>div:hover {
+    border-color: var(--primary-color);
+}
+
+.blog_right_div .radio_btns_container>div a i {
+    font-size: 18px;
+}
+
+.popular_post .post_img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.popular_post .post_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pop_post_content p {
+    color: var(--dark-grey);
+    padding-bottom: 5px;
+}
+
+.pop_post_content h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.popular_post a{
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 16px;
+}
+.popular_post a:last-child{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.popular_post a:hover h5 {
+    color: var(--primary-color);
+}
+
+.Tags_cloud a {
+    padding: 8px 16px;
+    color: var(--dark-grey);
+    background-color: var(---hero-bg);
+    border-radius: 2px;
+}
+
+.Tags_cloud a:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.fahion_year_img {
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fahion_year_img h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    color: var(--white-color);
+    font-size: clamp(26px, 3.5vw, 42px);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* =========================================
+BLOG PAGE CSS ENDS 
+========================================= */
+
 /* ++++++++++++
 MEDIA QUERIES FOR RESPONSIVENESS 
 ++++++++++++ */
 
-
 @media (max-width: 1399.98px) {
-
     .hero-right-text {
         max-width: 360px;
     }
@@ -3683,11 +3853,15 @@ MEDIA QUERIES FOR RESPONSIVENESS
         height: 280px;
     }
 
+    .blog_tag_container {
+        padding: 10px;
+        width: 95%;
+        font-size: 12px;
+    }
 }
 
 /* Medium (xl): <1200px */
 @media (max-width: 1199.98px) {
-
     .navbar-expand-lg .navbar-nav .nav-link {
         padding: 0 16px;
     }
@@ -3713,14 +3887,10 @@ MEDIA QUERIES FOR RESPONSIVENESS
     .collection_right_img {
         height: 420px;
     }
-
-
-
 }
 
 /* Medium (md): <992px */
 @media (max-width: 991.98px) {
-
     .logo_divison .search_box {
         width: 100%;
         position: static;
@@ -3737,7 +3907,7 @@ MEDIA QUERIES FOR RESPONSIVENESS
         left: 50%;
         transform: translateX(-50%);
         z-index: 20;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .logo_divison .search_box input.active {
@@ -3815,7 +3985,7 @@ MEDIA QUERIES FOR RESPONSIVENESS
     .slider-img {
         top: auto;
         bottom: 20px !important;
-        transform: translate(-50%, 0)
+        transform: translate(-50%, 0);
     }
 
     .hero-right-text {
@@ -3896,6 +4066,12 @@ MEDIA QUERIES FOR RESPONSIVENESS
 
     .cart_note {
         max-width: 1000px;
+    }
+
+    .blog_tag_container {
+        padding: 10px 16px;
+        width: max-content;
+        font-size: 14px;
     }
 }
 
