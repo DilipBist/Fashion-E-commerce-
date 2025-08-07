@@ -47,7 +47,7 @@ include 'inc/header.php';
 
                                         <h3><?= $blog['title'] ?></h3>
                                         <p><?= $blog['description'] ?></p>
-                                        <a href="#">continue Reading</a>
+                                        <a href="individual-blog.php">continue Reading</a>
                                     </div>
                                 </div>
                             </div>
