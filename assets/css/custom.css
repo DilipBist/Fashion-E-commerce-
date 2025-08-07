@@ -3745,6 +3745,12 @@ BLOG PAGE CSS STARTS
     color: var(--primary-color);
 }
 
+.blog_right_div {
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
 .blog_right_div .radio_btns_container>div a {
     display: flex;
     align-items: center;
@@ -3788,14 +3794,17 @@ BLOG PAGE CSS STARTS
     font-size: 16px;
     font-weight: 600;
 }
-.popular_post a{
+
+.popular_post a {
     border-bottom: 1px solid var(--grey-color);
     padding-bottom: 16px;
 }
-.popular_post a:last-child{
+
+.popular_post a:last-child {
     border-bottom: 0;
     padding-bottom: 0;
 }
+
 .popular_post a:hover h5 {
     color: var(--primary-color);
 }
@@ -3831,6 +3840,274 @@ BLOG PAGE CSS STARTS
     text-transform: uppercase;
 }
 
+/* ++++++++++++++ individual blog page css ************ */
+.individual_blog_large_img {
+    position: relative;
+}
+
+.individual_blog_large_img .tagline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white-color);
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: max-content;
+    box-shadow: 0px 0px 10px 0 rgba(12, 12, 12, 0.3);
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-weight: 600;
+    font-size: clamp(12px, 1vw, 15px);
+    padding-right: clamp(10px, 1.5vw, 20px);
+}
+
+.individual_blog_large_img .tagline .cat {
+    background-color: var(--primary-color);
+    padding: clamp(6px, 1vw, 10px) clamp(10px, 1.5vw, 20px);
+    color: var(--white-color);
+}
+
+.individual_blog_large_img .tagline p {
+    position: relative;
+    padding-right: 8px;
+    margin-bottom: 0;
+    color: var(--black-font);
+}
+
+.individual_blog_large_img .tagline p:last-child {
+    padding-right: 0;
+}
+
+.individual_blog_large_img .tagline p::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 60%;
+    background-color: var(--dark-grey);
+    width: 1px;
+    transform: translateY(-50%);
+}
+
+.individual_blog_large_img .tagline p:last-child:before {
+    display: none;
+}
+
+.individual_blog_left h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--black-font);
+    font-size: clamp(22px, 4vw, 42px);
+    margin-bottom: 16px;
+}
+
+.individual_blog_left p {
+    color: var(--grey-color2);
+    margin-bottom: 16px;
+}
+
+.individual_blog_left a {
+    color: var(--primary-color);
+}
+
+.individual_blog_quote h4 {
+    font-size: clamp(16px, 1.1vw, 18px);
+    font-weight: 600;
+}
+
+.individual_blog_quote p {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.individual_blog_quote .icon i {
+    font-size: clamp(36px, 4vw, 60px);
+    color: var(--primary-color);
+}
+
+.individual_blog_left h3 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: clamp(22px, 2vw, 28px);
+    font-weight: 600;
+}
+
+.individual_blog_left .video_paly_section .video_play_btn {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.individual_blog_left .video_paly_bg::after {
+    background-color: rgba(12, 12, 12, 0.2);
+}
+
+.individual_blog_left .video_paly_bg {
+    border-radius: 0;
+    height: 380px;
+}
+
+.individual_blog_left ul li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--grey-color2);
+}
+
+.individual_blog_left ul li::before {
+    content: "\eb7b";
+    font-family: "remixicon";
+    font-size: 18px;
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.individual_blog_left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.indiv_product_tagline_container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid var(--grey-color);
+    margin-top: 34px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid var(--grey-color);
+}
+
+.indiv_product_tagline_container p {
+    margin-bottom: 0;
+}
+
+.indi_social_links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.indi_social_links a {
+    color: var(--black-font);
+}
+
+.indi_social_links a:hover {
+    color: var(--primary-color);
+}
+
+.indi_author_container .aut_img {
+    width: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    ;
+    display: flex;
+}
+
+.indi_author_container .aut_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.indi_author_container .aut_descripton {
+    background-color: var(--white-F7);
+    padding: 16px;
+    flex: 1;
+}
+
+.indi_author_container .aut_descripton p {
+    color: var(--dark-grey);
+    margin: 0;
+}
+
+.indi_author_container .aut_descripton h6 {
+    color: var(--dark-grey);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.indi_author_container .aut_descripton h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-font);
+    padding: 5px 0 10px 0;
+}
+
+.commenter_img {
+    height: 140px;
+    width: 140px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.commenter_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.commenter_comments .name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black-font);
+}
+
+.commenter_comments .date {
+    color: var(--dark-grey);
+    padding: 8px 0;
+    text-transform: uppercase;
+}
+
+.comment_Detail_container button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    color: var(--black-font);
+    font-weight: 700;
+
+}
+.comment_details>div:nth-of-type(even) {
+    width: 85%;
+    margin-left: auto;
+}
+.comment_form form button{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: clamp(6px, 1vw, 10px) 24px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+}
+.comment_form form button:hover{
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.comment_form form .input{
+    padding: 10px;
+    border: 1px solid var(--grey-color);
+    width: 100%;
+    outline-color: var(---hero-bg);
+}
+.comment_form form textarea{
+    padding: 10px;
+    color: var(--black-font);
+    height: 160px;
+    width: 100%;
+    border: 1px solid var(--grey-color);
+    outline-color: var(---hero-bg);
+}
+.comment_form form label{
+    color: var(--dark-grey);
+}
 /* =========================================
 BLOG PAGE CSS ENDS 
 ========================================= */
@@ -4166,6 +4443,21 @@ MEDIA QUERIES FOR RESPONSIVENESS
 
     .video_play_btn {
         top: 20%;
+    }
+
+    .individual_blog_large_img .tagline {
+        left: 10px;
+        bottom: -15px;
+    }
+
+    .indi_author_container .aut_img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .comment_details>div:nth-of-type(even) {
+        width: 100%;
+        margin-left: auto;
     }
 }
 
